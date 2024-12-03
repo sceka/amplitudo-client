@@ -1,0 +1,42 @@
+@use "../../../styles/variables.scss";
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-button {
+	background-color: variables.$dark;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	position: absolute;
+	background-color: white;
+	border: 1px solid #ccc;
+	width: 100%;
+	margin-top: -3px;
+	display: none;
+	list-style: none;
+	padding: 0;
+	z-index: 10;
+	overflow: scroll;
+	height: 100px;
+}
+
+.dropdown-button:hover + .dropdown-menu,
+.dropdown-menu:hover {
+	display: block;
+}
+
+.dropdown-item {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.dropdown-item:hover {
+	background-color: #f0f0f0;
+}

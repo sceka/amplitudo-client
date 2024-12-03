@@ -1,0 +1,11 @@
+.admin-page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.user-card-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 50px;
+	padding: 20px;
+}

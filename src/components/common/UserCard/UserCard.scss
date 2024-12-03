@@ -1,0 +1,44 @@
+.user-card-container {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: auto;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.user-info-item {
+	margin-bottom: 10px;
+}
+
+.user-info-item label {
+	font-weight: bold;
+}
+
+.user-info-item span {
+	margin-left: 8px;
+}
+
+.delete-button {
+	margin-top: auto;
+	padding: 10px 20px;
+	background-color: #ff4d4d;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: #e63946;
+	}
+}

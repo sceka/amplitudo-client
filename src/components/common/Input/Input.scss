@@ -1,0 +1,29 @@
+@use "../../../styles/variables.scss";
+
+.input-container {
+	.input {
+		padding: 0.3125rem 0.625rem;
+		border-radius: 0.5rem;
+		width: 100%;
+		font-weight: 400;
+		color: variables.$dark;
+		border: 2px solid variables.$lighter-gray;
+		transition: 0.2s ease;
+
+		&::placeholder {
+			font-weight: 300;
+			color: variables.$middle-gray;
+		}
+
+		&:focus {
+			outline: none;
+			border-color: variables.$dark;
+		}
+	}
+
+	label {
+		margin-bottom: 0.25rem;
+		font-size: 0.875rem;
+		display: block;
+	}
+}
